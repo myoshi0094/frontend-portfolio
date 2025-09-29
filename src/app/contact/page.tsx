@@ -8,10 +8,6 @@ import AnimatedButton from '@/components/animations/AnimatedButton'
 import { ContactFormData } from '@/app/api/contact/route'
 import { initEmailJS, sendEmail, EmailData } from '@/lib/emailjs'
 
-interface FormData extends ContactFormData {
-  // フロントエンド用の追加プロパティがある場合はここに定義
-}
-
 export default function ContactPage() {
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [submitStatus, setSubmitStatus] = useState<{
@@ -24,7 +20,7 @@ export default function ContactPage() {
     handleSubmit,
     formState: { errors },
     reset,
-  } = useForm<FormData>()
+  } = useForm<ContactFormData>()
 
   useEffect(() => {
     try {
@@ -38,7 +34,7 @@ export default function ContactPage() {
     }
   }, [])
 
-  const onSubmit = async (data: FormData) => {
+  const onSubmit = async (data: ContactFormData) => {
     setIsSubmitting(true)
     setSubmitStatus({ type: null, message: '' })
 

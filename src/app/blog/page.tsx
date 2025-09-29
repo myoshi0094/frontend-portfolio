@@ -1,13 +1,14 @@
 import Link from 'next/link'
 import { getBlogPosts } from '@/lib/microcms'
 import { formatDate } from '@/lib/utils'
+import { BlogPost } from '@/types/blog'
 import PageTransition from '@/components/animations/PageTransition'
 import FadeInWhenVisible from '@/components/animations/FadeInWhenVisible'
 import AnimatedCard from '@/components/animations/AnimatedCard'
 
 export default async function BlogPage() {
-  let posts = []
-  let error = null
+  let posts: BlogPost[] = []
+  let error: string | null = null
 
   try {
     const response = await getBlogPosts({

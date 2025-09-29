@@ -7,9 +7,9 @@ import FadeInWhenVisible from '@/components/animations/FadeInWhenVisible'
 import AnimatedButton from '@/components/animations/AnimatedButton'
 
 interface BlogPostPageProps {
-  params: {
+  params: Promise<{
     slug: string
-  }
+  }>
 }
 
 export async function generateStaticParams() {
@@ -25,10 +25,11 @@ export async function generateStaticParams() {
 }
 
 export default async function BlogPostPage({ params }: BlogPostPageProps) {
+  const { slug } = await params
   let post = null
 
   try {
-    post = await getBlogPostBySlug(params.slug)
+    post = await getBlogPostBySlug(slug)
   } catch (error) {
     console.error('Failed to fetch blog post:', error)
   }

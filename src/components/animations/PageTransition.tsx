@@ -15,7 +15,7 @@ export default function PageTransition({ children }: PageTransitionProps) {
       exit={{ opacity: 0, y: 20 }}
       transition={{
         duration: 0.5,
-        ease: 'easeOut',
+        ease: "easeOut" as const,
       }}
     >
       {children}

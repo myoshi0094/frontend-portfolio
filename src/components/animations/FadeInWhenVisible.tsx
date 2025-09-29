@@ -42,7 +42,7 @@ export default function FadeInWhenVisible({
       transition={{
         duration: 0.6,
         delay,
-        ease: [0.25, 0.25, 0.25, 0.75],
+        ease: "easeOut" as const,
       }}
     >
       {children}

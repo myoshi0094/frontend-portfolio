@@ -27,7 +27,7 @@ export default function AnimatedCard({
       transition: {
         duration: 0.5,
         delay,
-        ease: [0.25, 0.25, 0.25, 0.75],
+        ease: "easeOut" as const,
       },
     },
     hover: {
@@ -35,7 +35,7 @@ export default function AnimatedCard({
       scale: 1.02,
       transition: {
         duration: 0.3,
-        ease: 'easeOut',
+        ease: "easeOut" as const,
       },
     },
   }

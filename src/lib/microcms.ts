@@ -35,7 +35,6 @@ export const getBlogPost = async (
   contentId: string,
   queries?: {
     fields?: string
-    depth?: number
   }
 ): Promise<BlogPost> => {
   return await client.get({
