@@ -1,17 +1,15 @@
-Frontend Engineer Portfolio
-デザイナーからフロントエンドエンジニアに転身したプロフェッショナルのポートフォリオサイト
-
+<artifact identifier="readme-markdown" type="text/markdown" title="README.md">
 🌐 Live Demo
 https://your-portfolio-url.vercel.app
 
 📋 概要
-8年間のフリーランス経験と2.5年のフロントエンド開発経験を活かし
+8年間のフリーランス経験と2.5年のフロントエンド開発経験を活かし、
 UI/UXを理解した実装で「デザインと開発の橋渡し」を得意とするエンジニアのポートフォリオです。
 
 🛠️ 技術スタック
 フロントエンド
 
-Next.js 14 (App Router)
+Next.js 15 (App Router)
 TypeScript - 型安全性の確保
 React - コンポーネント設計
 Tailwind CSS - 効率的なスタイリング
@@ -86,35 +84,50 @@ git clone https://github.com/your-username/frontend-portfolio.git
 cd frontend-portfolio
 
 # 依存関係のインストール
+
 npm install
 
 # 環境変数の設定
+
 cp .env.local.example .env.local
+
 # .env.localファイルに必要な値を設定
 
 # 開発サーバーの起動
+
 npm run dev
+ブラウザで http://localhost:3000 を開いてください。
 環境変数
+.env.local ファイルに以下の環境変数を設定してください：
 bash# microCMS
 MICROCMS_SERVICE_DOMAIN=your-service-domain
 MICROCMS_API_KEY=your-api-key
 
 # EmailJS
+
 NEXT_PUBLIC_EMAILJS_SERVICE_ID=your-service-id
 NEXT_PUBLIC_EMAILJS_TEMPLATE_ID=your-template-id
 NEXT_PUBLIC_EMAILJS_PUBLIC_KEY=your-public-key
 📁 プロジェクト構造
+frontend-portfolio/
 ├── src/
-│   ├── app/                 # App Router
-│   │   ├── blog/           # ブログページ
-│   │   ├── contact/        # お問い合わせページ
-│   │   └── about/          # About ページ
-│   ├── components/         # 再利用可能コンポーネント
-│   ├── lib/               # ユーティリティ・設定
-│   │   └── microcms.ts    # microCMS クライアント
-│   └── types/             # TypeScript 型定義
-├── public/                # 静的ファイル
-└── styles/               # グローバルスタイル
+│ ├── app/ # App Router
+│ │ ├── page.tsx # トップページ
+│ │ ├── about/ # Aboutページ
+│ │ ├── blog/ # ブログページ
+│ │ │ ├── page.tsx # 記事一覧
+│ │ │ └── [slug]/ # 記事詳細
+│ │ └── contact/ # お問い合わせページ
+│ ├── components/ # 再利用可能コンポーネント
+│ │ ├── animations/ # アニメーション関連
+│ │ ├── ui/ # UIコンポーネント
+│ │ └── layout/ # レイアウト関連
+│ ├── lib/ # ユーティリティ・設定
+│ │ ├── microcms.ts # microCMS クライアント
+│ │ └── utils.ts # ユーティリティ関数
+│ └── types/ # TypeScript 型定義
+├── public/ # 静的ファイル
+└── tailwind.config.ts # Tailwind設定
 🎨 デザインアプローチ
 カラーパレット
 
@@ -143,21 +156,19 @@ UI/UXを理解したアニメーション実装
 
 📈 今後の拡張予定
 
- ダークモード切り替え機能
- ブログ記事の全文検索
- Core Web Vitals スコア表示
- PWA対応
+ダークモード切り替え機能
+ブログ記事の全文検索
+Core Web Vitals スコア表示
+PWA対応
 
 👤 制作者について
 フリーランス フロントエンドエンジニア
 
-8年間のフリーランス経験
+8年間のフリーランスデザイナー経験
 2.5年のフロントエンド開発経験
 デザイナーからエンジニアへの転身経験
 UI/UXを理解した実装が強み
 
 📄 ライセンス
 このプロジェクトは個人ポートフォリオとして作成されています。
-
-Contact: [your-email@example.com]
-Portfolio: [https://your-portfolio-url.vercel.app]
+</artifact>
