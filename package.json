@@ -15,6 +15,7 @@
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
+    "@tailwindcss/typography": "^0.5.0-alpha.3",
     "framer-motion": "^12.23.22",
     "microcms-js-sdk": "^3.2.0",
     "next": "15.5.4",

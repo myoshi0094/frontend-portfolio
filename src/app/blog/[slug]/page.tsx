@@ -49,12 +49,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
                 href="/blog"
                 className="inline-flex items-center text-[#E5E5E5] hover:text-white transition-colors"
               >
-                <svg
-                  className="w-4 h-4 mr-2"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
+                <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -81,28 +76,26 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
                   {post.title}
                 </h1>
 
-            <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between text-[#A1A1A1] text-sm">
-              <time className="mb-2 sm:mb-0">
-                公開日: {formatDate(post.publishedAt)}
-              </time>
-              {post.updatedAt !== post.createdAt && (
-                <time>更新日: {formatDate(post.updatedAt)}</time>
-              )}
-            </div>
+                <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between text-[#A1A1A1] text-sm">
+                  <time className="mb-2 sm:mb-0">公開日: {formatDate(post.publishedAt)}</time>
+                  {post.updatedAt !== post.createdAt && (
+                    <time>更新日: {formatDate(post.updatedAt)}</time>
+                  )}
+                </div>
 
-            {/* Tags */}
-            {post.tags && post.tags.length > 0 && (
-              <div className="flex flex-wrap gap-2 mt-4">
-                {post.tags.map((tag) => (
-                  <span
-                    key={tag.id}
-                    className="text-xs text-[#A1A1A1] bg-[#1A1A1A] px-2 py-1 rounded"
-                  >
-                    #{tag.name}
-                  </span>
-                ))}
-              </div>
-            )}
+                {/* Tags */}
+                {post.tags && post.tags.length > 0 && (
+                  <div className="flex flex-wrap gap-2 mt-4">
+                    {post.tags.map((tag) => (
+                      <span
+                        key={tag.id}
+                        className="text-xs text-[#A1A1A1] bg-[#1A1A1A] px-2 py-1 rounded"
+                      >
+                        #{tag.name}
+                      </span>
+                    ))}
+                  </div>
+                )}
               </header>
             </FadeInWhenVisible>
 
@@ -111,16 +104,24 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
               <div className="bg-[#1F1F1F] border border-gray-700/50 rounded-lg p-8">
                 <div
                   className="prose prose-invert prose-lg max-w-none
-                    prose-headings:text-white prose-headings:font-bold
-                    prose-h1:text-3xl prose-h2:text-2xl prose-h3:text-xl
-                    prose-p:text-[#E5E5E5] prose-p:leading-relaxed
-                    prose-a:text-[#E5E5E5] prose-a:no-underline hover:prose-a:text-white
-                    prose-strong:text-white prose-em:text-[#E5E5E5]
-                    prose-code:text-[#E5E5E5] prose-code:bg-[#1A1A1A] prose-code:px-1 prose-code:py-0.5 prose-code:rounded
-                    prose-pre:bg-[#0F0F0F] prose-pre:border prose-pre:border-gray-700/50
-                    prose-blockquote:border-l-white prose-blockquote:text-[#E5E5E5]
-                    prose-ul:text-[#E5E5E5] prose-ol:text-[#E5E5E5]
-                    prose-li:text-[#E5E5E5]"
+    prose-headings:text-white prose-headings:font-bold
+    prose-h1:text-3xl prose-h1:mt-8 prose-h1:mb-4
+    prose-h2:text-2xl prose-h2:mt-8 prose-h2:mb-4 prose-h2:border-b prose-h2:border-gray-700 prose-h2:pb-3
+    prose-h3:text-xl prose-h3:mt-6 prose-h3:mb-3
+    prose-h4:text-lg prose-h4:mt-4 prose-h4:mb-2
+    prose-p:text-[#E5E5E5] prose-p:leading-relaxed prose-p:mb-4
+    prose-a:text-blue-400 prose-a:no-underline hover:prose-a:underline hover:prose-a:text-blue-300
+    prose-strong:text-white prose-strong:font-semibold
+    prose-em:text-[#E5E5E5] prose-em:italic
+    prose-code:text-[#E5E5E5] prose-code:bg-[#1A1A1A] prose-code:px-2 prose-code:py-1 prose-code:rounded prose-code:text-sm
+    prose-code:before:content-[''] prose-code:after:content-['']
+    prose-pre:bg-[#0F0F0F] prose-pre:border prose-pre:border-gray-700/50 prose-pre:rounded-lg prose-pre:p-4 prose-pre:overflow-x-auto
+    prose-blockquote:border-l-4 prose-blockquote:border-white prose-blockquote:pl-4 prose-blockquote:italic prose-blockquote:text-[#A1A1A1]
+    prose-ul:list-disc prose-ul:pl-6 prose-ul:text-[#E5E5E5] prose-ul:my-4
+    prose-ol:list-decimal prose-ol:pl-6 prose-ol:text-[#E5E5E5] prose-ol:my-4
+    prose-li:text-[#E5E5E5] prose-li:my-1
+    prose-img:rounded-lg prose-img:shadow-lg prose-img:my-6
+    prose-hr:border-gray-700 prose-hr:my-8"
                   dangerouslySetInnerHTML={{ __html: post.content }}
                 />
               </div>
