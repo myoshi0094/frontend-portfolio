@@ -1,10 +1,12 @@
 <artifact identifier="readme-markdown" type="text/markdown" title="README.md">
+
 🌐 Live Demo
-https://your-portfolio-url.vercel.app
+https://frontend-portfolio-sandy-delta.vercel.app/
 
 📋 概要
 8年間のフリーランス経験と2.5年のフロントエンド開発経験を活かし、
-UI/UXを理解した実装で「デザインと開発の橋渡し」を得意とするエンジニアのポートフォリオです。
+UI/UXを理解した実装で「デザインと開発の橋渡し」を
+得意とするエンジニアのポートフォリオです。
 
 🛠️ 技術スタック
 フロントエンド
@@ -78,11 +80,6 @@ SEO対応
 Node.js 18.0以上
 npm または yarn
 
-セットアップ
-bash# リポジトリのクローン
-git clone https://github.com/your-username/frontend-portfolio.git
-cd frontend-portfolio
-
 # 依存関係のインストール
 
 npm install
@@ -154,19 +151,12 @@ UI/UXを理解したアニメーション実装
 型安全性を重視した実装
 パフォーマンスを考慮した最適化
 
-📈 今後の拡張予定
-
-ダークモード切り替え機能
-ブログ記事の全文検索
-Core Web Vitals スコア表示
-PWA対応
-
 👤 制作者について
 フリーランス フロントエンドエンジニア
 
-8年間のフリーランスデザイナー経験
+20年間（フリーランス8年）のフリーランスデザイナー経験
 2.5年のフロントエンド開発経験
-デザイナーからエンジニアへの転身経験
+デザイナーからエンジニアへ
 UI/UXを理解した実装が強み
 
 📄 ライセンス
