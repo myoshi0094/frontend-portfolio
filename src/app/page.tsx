@@ -46,11 +46,11 @@ export default async function Home() {
                 className="flex flex-col sm:flex-row gap-4 justify-center mb-12"
               >
                 <div className="bg-[#1F1F1F] border border-white/20 rounded-lg px-6 py-4 shadow-lg backdrop-blur-sm">
-                  <div className="text-2xl font-bold text-[#E5E5E5]">8年</div>
-                  <div className="text-sm text-[#A1A1A1]">フリーランス経験</div>
+                  <div className="text-2xl font-bold text-[#E5E5E5]">20年</div>
+                  <div className="text-sm text-[#A1A1A1]">デザイナー経験</div>
                 </div>
                 <div className="bg-[#1F1F1F] border border-white/20 rounded-lg px-6 py-4 shadow-lg backdrop-blur-sm">
-                  <div className="text-2xl font-bold text-[#E5E5E5]">2.5年</div>
+                  <div className="text-2xl font-bold text-[#E5E5E5]">10年以上</div>
                   <div className="text-sm text-[#A1A1A1]">フロントエンド開発</div>
                 </div>
               </FadeInWhenVisible>

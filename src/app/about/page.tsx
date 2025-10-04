@@ -28,15 +28,11 @@ export default function About() {
                   </FadeInWhenVisible>
 
                   <div className="mb-8">
-                    <p className="text-[#E5E5E5] mb-4 leading-relaxed">
-                      8年間のフリーランスデザイナーとしての経験を経て、
-                      2.5年前からフロントエンド開発にも本格参入。
-                      デザインとエンジニアリング両方の視点を持つことで、
-                      より良いユーザー体験の実現を目指しています。
+                    <p className="text-[#E5E5E5] leading-relaxed mb-6">
+                      20年間のデザイナー経験（フリーランス8年）を経て、10年以上にわたりフロントエンド開発に携わっています。2.5年前からはNext.js/Reactなどモダンフレームワークを用いた開発に本格的にシフトし、デザインとエンジニアリング両方の視点を持つことで、より良いユーザー体験の実現を目指しています。
                     </p>
-                    <p className="text-[#E5E5E5] mb-4 leading-relaxed">
-                      UI/UXデザインの知識を活かしながら、技術的な実装にも深く関わることで、
-                      デザインと開発の橋渡し役として価値を提供しています。
+                    <p className="text-[#E5E5E5] leading-relaxed">
+                      UI/UXデザインの知識を活かしながら、技術的な実装にも深く関わることで、デザインと開発の橋渡し役として価値を提供しています。
                     </p>
                   </div>
 
@@ -71,12 +67,16 @@ export default function About() {
                     <div className="bg-gradient-to-br from-white/5 to-[#1F1F1F] border border-gray-500/20 rounded-lg p-6 hover:border-gray-500/40 transition-all duration-300">
                       <h4 className="font-semibold text-[#A1A1A1] mb-3 flex items-center">
                         <span className="w-2 h-2 bg-[#A1A1A1] rounded-full mr-2 shadow-lg shadow-white/20"></span>
-                        エンジニア経験（2.5年）
+                        エンジニア経験（10年以上）
                       </h4>
                       <ul className="space-y-2 text-[#E5E5E5]">
                         <li className="flex items-start">
-                          <span className="text-[#A1A1A1] mr-2 mt-1">•</span>
-                          Next.js・Reactを使用したフロントエンド開発
+                          <span className="mr-2 mt-1">•</span>
+                          <span>HTML/CSS/JavaScriptによるフロントエンド開発</span>
+                        </li>
+                        <li className="flex items-start">
+                          <span className="mr-2 mt-1">•</span>
+                          <span>Next.js・Reactを使用したモダンな開発（2.5年）</span>
                         </li>
                         <li className="flex items-start">
                           <span className="text-[#A1A1A1] mr-2 mt-1">•</span>
