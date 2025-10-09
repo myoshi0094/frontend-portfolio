@@ -27,7 +27,7 @@ export default async function Home() {
           <div className="max-w-7xl mx-auto relative z-10">
             <div className="text-center">
               <FadeInWhenVisible delay={0.2}>
-                <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-6 leading-tight">
+                <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-6 leading-tight font-[family-name:var(--font-montserrat)]">
                   Frontend Engineer
                   <span className="block bg-gradient-to-r from-[#E5E5E5] to-white bg-clip-text text-transparent">
                     with Design Background
