@@ -6,6 +6,7 @@ import PageTransition from '@/components/animations/PageTransition'
 import FadeInWhenVisible from '@/components/animations/FadeInWhenVisible'
 import AnimatedCard from '@/components/animations/AnimatedCard'
 import AnimatedButton from '@/components/animations/AnimatedButton'
+import HeroCanvasWrapper from '@/components/HeroCanvasWrapper'
 
 export default async function Home() {
   let latestPosts: BlogPost[] = []
@@ -19,15 +20,13 @@ export default async function Home() {
     <PageTransition>
       <div className="min-h-screen bg-[#0F0F0F]">
         {/* Hero Section */}
-        <section className="relative bg-gradient-to-br from-[#0F0F0F] via-[#1A1A1A] to-[#0F0F0F] py-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
-          {/* Background accent */}
-          <div className="absolute inset-0 bg-gradient-to-r from-white/5 to-transparent"></div>
-          <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-white/5 rounded-full blur-3xl"></div>
+        <section className="relative bg-black py-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
+          <HeroCanvasWrapper />
 
           <div className="max-w-7xl mx-auto relative z-10">
             <div className="text-center">
               <FadeInWhenVisible delay={0.2}>
-                <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-6 leading-tight font-[family-name:var(--font-montserrat)]">
+                <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-6 leading-tight font-[family-name:var(--font-montserrat)] drop-shadow-[0_2px_12px_rgba(0,0,0,0.8)]">
                   Frontend Engineer
                   <span className="block bg-gradient-to-r from-[#E5E5E5] to-white bg-clip-text text-transparent">
                     with Design Background
@@ -35,7 +34,7 @@ export default async function Home() {
                 </h1>
               </FadeInWhenVisible>
               <FadeInWhenVisible delay={0.4}>
-                <p className="text-xl sm:text-2xl text-[#E5E5E5] mb-8 max-w-3xl mx-auto leading-relaxed">
+                <p className="text-xl sm:text-2xl text-[#E5E5E5] mb-8 max-w-3xl mx-auto leading-relaxed drop-shadow-[0_2px_8px_rgba(0,0,0,0.9)]">
                   デザイナーとしての経験を活かし、
                   <br />
                   UI/UXを深く理解したフロントエンド開発を実現します。
