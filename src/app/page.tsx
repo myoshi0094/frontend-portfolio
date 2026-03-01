@@ -98,7 +98,7 @@ export default async function Home() {
                   </div>
                   <div className="flex items-center space-x-3">
                     <div className="w-3 h-3 bg-[#E5E5E5] rounded-full shadow-lg shadow-white/20"></div>
-                    <span className="text-[#E5E5E5]">Form Validation</span>
+                    <span className="text-[#E5E5E5]">shadcn/ui</span>
                   </div>
                 </div>
               </AnimatedCard>
@@ -117,6 +117,14 @@ export default async function Home() {
                   </div>
                   <div className="flex items-center space-x-3">
                     <div className="w-3 h-3 bg-[#A1A1A1] rounded-full shadow-lg shadow-white/20"></div>
+                    <span className="text-[#E5E5E5]">Figma Plugin API</span>
+                  </div>
+                  <div className="flex items-center space-x-3">
+                    <div className="w-3 h-3 bg-[#A1A1A1] rounded-full shadow-lg shadow-white/20"></div>
+                    <span className="text-[#E5E5E5]">Illustrator</span>
+                  </div>
+                  <div className="flex items-center space-x-3">
+                    <div className="w-3 h-3 bg-[#A1A1A1] rounded-full shadow-lg shadow-white/20"></div>
                     <span className="text-[#E5E5E5]">Photoshop</span>
                   </div>
                 </div>
@@ -127,7 +135,7 @@ export default async function Home() {
                 className="bg-[#1F1F1F] border border-gray-700/50 rounded-lg p-6 hover:border-white/50 transition-all duration-300 group"
               >
                 <h3 className="text-xl font-semibold text-white mb-4 group-hover:text-white transition-colors">
-                  バックエンド
+                  バックエンド/その他
                 </h3>
                 <div className="space-y-3">
                   <div className="flex items-center space-x-3">
@@ -141,6 +149,10 @@ export default async function Home() {
                   <div className="flex items-center space-x-3">
                     <div className="w-3 h-3 bg-[#A1A1A1] rounded-full shadow-lg shadow-white/20"></div>
                     <span className="text-[#E5E5E5]">microCMS</span>
+                  </div>
+                  <div className="flex items-center space-x-3">
+                    <div className="w-3 h-3 bg-[#A1A1A1] rounded-full shadow-lg shadow-white/20"></div>
+                    <span className="text-[#E5E5E5]">Claude Code</span>
                   </div>
                 </div>
               </AnimatedCard>

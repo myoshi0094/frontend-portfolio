@@ -76,7 +76,7 @@ export default function About() {
                         </li>
                         <li className="flex items-start">
                           <span className="mr-2 mt-1">•</span>
-                          <span>Next.js・Reactを使用したモダンな開発（2.5年）</span>
+                          <span>Next.js・Reactを使用したモダンな開発（約3年）</span>
                         </li>
                         <li className="flex items-start">
                           <span className="text-[#A1A1A1] mr-2 mt-1">•</span>
@@ -124,12 +124,14 @@ export default function About() {
 
                   <div className="space-y-4">
                     <p className="text-[#E5E5E5] leading-relaxed">
-                      フロントエンドエンジニアとしてのスキルをさらに深めながら、デザインシステムの構築やアクセシビリティの向上を通じて、より良いユーザー体験の実現に貢献します。
+                      フロントエンド・3D・AIを軸とした次世代UIの実装と、Figma APIを活用したデザインシステムの自動化に注力しています。
                     </p>
 
                     <p className="text-[#E5E5E5] leading-relaxed">
-                      また、デザインとエンジニアリングの知識を活かして、
-                      チーム全体の生産性向上にも寄与していければと思います。
+                      単なる画面構築に留まらず、アクセシビリティの担保や開発基盤の最適化を通じて、プロダクトの進化とチーム全体の生産性を劇的に加速させることを目指します。
+                    </p>
+                    <p className="text-[#E5E5E5] leading-relaxed">
+                      フロントエンドエンジニアとしての専門性を深化させながら、技術の力で「より良いユーザー体験」を最短距離で実現することに貢献いたします。
                     </p>
                   </div>
                 </div>
