@@ -23,7 +23,7 @@ const montserrat = Montserrat({
 export const metadata: Metadata = {
   title: 'Frontend Engineer Portfolio',
   description:
-    'Frontend Engineer with Design Background - 8年フリーランス経験 / 2.5年フロントエンド開発',
+    'Frontend Engineer with Design Background - デザイナー経験20年 / フロントエンド開発10年以上',
 }
 
 export default function RootLayout({
