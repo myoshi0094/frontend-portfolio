@@ -29,7 +29,7 @@ export default function About() {
 
                   <div className="mb-8">
                     <p className="text-[#E5E5E5] leading-relaxed mb-6">
-                      20年間のデザイナー経験（フリーランス8年）を経て、10年以上にわたりフロントエンド開発に携わっています。2.5年前からはNext.js/Reactなどモダンフレームワークを用いた開発に本格的にシフトし、デザインとエンジニアリング両方の視点を持つことで、より良いユーザー体験の実現を目指しています。
+                      20年間のデザイナー経験（フリーランス8年）を経て、10年以上にわたりフロントエンド開発に携わっています。2023年からはNext.js/Reactなどモダンフレームワークを用いた開発に本格的にシフトし、デザインとエンジニアリング両方の視点を持つことで、より良いユーザー体験の実現を目指しています。
                     </p>
                     <p className="text-[#E5E5E5] leading-relaxed">
                       UI/UXデザインの知識を活かしながら、技術的な実装にも深く関わることで、デザインと開発の橋渡し役として価値を提供しています。
@@ -76,7 +76,7 @@ export default function About() {
                         </li>
                         <li className="flex items-start">
                           <span className="mr-2 mt-1">•</span>
-                          <span>Next.js・Reactを使用したモダンな開発（約3年）</span>
+                          <span>Next.js・Reactを使用したモダンな開発（2023年〜）</span>
                         </li>
                         <li className="flex items-start">
                           <span className="text-[#A1A1A1] mr-2 mt-1">•</span>
